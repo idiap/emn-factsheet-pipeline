@@ -1,0 +1,31 @@
+version = 1
+
+# Files that cannot be commented (PDFs, CSVs, etc.)
+[[annotations]]
+path = [
+    "data/2018/final/emn_18_cleaned.csv",
+    "data/2022/final/emn_22_cleaned.csv"
+]
+SPDX-FileCopyrightText = "© 2026 Idiap Research Institute <contact@idiap.ch>"
+SPDX-FileContributor = "David Alonso del Barrio <david.alonso@idiap.ch>"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = [
+    "data/2018/sample/*.pdf",
+    "data/2022/sample/*.pdf"
+]
+SPDX-FileCopyrightText = "© European Union, 2026"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+
+# Files that can be commented but we want to handle via the TOML
+[[annotations]]
+path = [
+    "README.md",
+    "environment.yml",
+    ".gitattributes"
+]
+SPDX-FileCopyrightText = "© 2026 Idiap Research Institute <contact@idiap.ch>"
+SPDX-FileContributor = "David Alonso del Barrio <david.alonso@idiap.ch>"
+SPDX-License-Identifier = "GPL-3.0-only"
